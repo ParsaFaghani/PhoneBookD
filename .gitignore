@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/first_d
+first_d.so
+first_d.dylib
+first_d.dll
+first_d.a
+first_d.lib
+first_d-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

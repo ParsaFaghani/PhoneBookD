@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"ParsaFaghani"
+	],
+	"copyright": "Copyright © 2025, ParsaFaghani",
+	"description": "A minimal D application.",
+	"license": "MIT",
+	"name": "phone_book"
+}
