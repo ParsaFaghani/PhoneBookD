@@ -36,10 +36,19 @@ int main()
 			case "2":
 				write("Name: ");
 				string name = readln().strip();
-				write("\nEnter Number: ");
+				write("Enter Number: ");
 				string number = readln().strip();
 				add_contact(name, [number], phone_book);
-				writeln("\n Contact add");
+				writeln("Contact add");
+				break;
+			case "3":
+				write("Name: ");
+				string name = readln().strip();
+				write("Are you sure to remove this? Y/n: ");
+				string yes = readln().strip();
+				if (yes == "y" || yes == "Y" ) {
+					rem_contact(name, phone_book);
+				}
 				break;
 			case "0": return 0;
 			default:
@@ -47,8 +56,5 @@ int main()
 		}
 		
 	}
-	add_contact("Ali", ["0922222222"], phone_book);
-	rem_contact("Ali", phone_book);
-	// phone_book["ali"] = Contact(Nullable!string[].init, ["09228224698", "09158939206"]);
-	writeln(phone_book);
+	
 }
